@@ -40,17 +40,7 @@
     height: min-content;
 
   }
-  /* #event-info {
-    width: 100%;
-    font-size: 1.5rem;
-    color: #f0f0f0;
-    text-align: center;
-    margin-top: 10px;
-    max-width: 800px;
-    line-height: 1.4;
-    font-family: "Nunito";
-    display: block;
-  } */
+
   #event-info {
     font-size: 1.8rem;
     color: #f0f0f0;
@@ -60,8 +50,8 @@
     line-height: 1.6;
     padding: 20px;
     border-radius: 12px;
-    background: rgba(0, 0, 0, 0.6); /* Subtle background for contrast */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    background: rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -78,7 +68,7 @@
 }
 
 #event-info strong {
-    color: #fa3f3f; /* Highlighted text color */
+    color: #fa3f3f; 
 }
 
 
@@ -206,15 +196,14 @@
     }
 
     .info {
-      /* Stack content vertically on smaller screens */
-      padding: 15px; /* Adjust padding for smaller screens */
+      padding: 15px; 
       margin-top: 15px;
       font-size: 1.5rem;
     }
     #event-info {
-      font-size: 1.5rem; /* Adjust font size for readability */
+      font-size: 1.5rem;
       padding: 15px;
-      margin-top: 10px; /* Adjust margin */
+      margin-top: 10px; 
     }
 
   }
@@ -222,12 +211,12 @@
   @media (max-width: 480px) {
 
     .info {
-      padding: 10px; /* Further reduce padding for very small screens */
+      padding: 10px; 
       margin-top: 10px;
     }
   
     #event-info {
-      font-size: 1.2rem; /* Further reduce font size for very small screens */
+      font-size: 1.2rem;
       padding: 10px;
     }
   }

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-// Function to extract date and time from event details
+
 export function extractEventDateTime(event) {
-    // Assumes the event object contains a 'date' and 'time' property
+    
     const eventDate = new Date(`${event.date} ${event.time}`);
     return eventDate;
 }
 
-// Function to calculate time remaining until the event
+
 export function calculateTimeRemaining(eventDate) {
     const now = new Date().getTime();
     const timeRemaining = eventDate.getTime() - now;
@@ -24,7 +24,7 @@ export function calculateTimeRemaining(eventDate) {
     return { days, hours, minutes, seconds };
 }
 
-// Countdown component
+
 function Countdown({ event }) {
     const eventDate = extractEventDateTime(event);
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining(eventDate));
@@ -34,7 +34,7 @@ function Countdown({ event }) {
             setTimeRemaining(calculateTimeRemaining(eventDate));
         }, 1000);
 
-        // Cleanup interval on component unmount
+
         return () => clearInterval(countdownInterval);
     }, [eventDate]);
 

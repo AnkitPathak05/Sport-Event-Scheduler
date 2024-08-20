@@ -4,7 +4,6 @@ import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 
 
-//NavLink se anchor tag me class active set ho jati h jb bhi link wala page open rehta h
 export default function Navbar() {
 
     const navlinkstyles=({isActive})=>{
