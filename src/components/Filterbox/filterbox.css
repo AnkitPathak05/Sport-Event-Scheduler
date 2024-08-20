@@ -1,0 +1,131 @@
+.filter-card {
+  width: 30rem;
+  height: auto;
+  /* background-color: rgb(49, 49, 49); */
+  background-color: rgba(95, 112, 113, 0.65);
+  color: rgb(239, 239, 239);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 12px;  
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+  font-size: 1.3rem;
+}
+
+/* Wrapper inside the filter card */
+.wrapper {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Form styling */
+.filter-card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Month label and select styling */
+.month label,
+.month select {
+  font-size: 16px !important;
+}
+
+/* Button styling */
+.filter-card button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(246, 155, 155);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-card button:hover {
+  background-color: rgb(235, 120, 120);
+}
+
+/* Checkbox section */
+.checkbox {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+input[type="date"], select {
+  width: 100%;
+  padding: 10px;
+  margin-top: px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkbox input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 670px) {
+  .filter-card {
+      width: 100%;
+      padding: 15px;
+      box-shadow: 5px 5px 8px rgba(27, 27, 26, 0.2); /* Lighter shadow on smaller screens */
+  }
+
+  .wrapper {
+      gap: 10px;
+  }
+  .checkbox {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .filter-card button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+}
+
+@media (max-width: 515px) {
+  .filter-card {
+      width: 90%; /* Use a percentage for better adaptability */
+      padding: 10px;
+  }
+
+  .filter-card button {
+      padding: 8px 16px;
+      font-size: 12px;
+  }
+
+  .checkbox {
+      display: flex;
+      flex-direction: column; /* Stack checkboxes vertically on small screens */
+      align-items: center;
+      gap: 10px;
+  }
+
+  .checkbox label {
+      font-size: 14px;
+  }
+}

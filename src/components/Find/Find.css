@@ -1,0 +1,14 @@
+.find-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: min-content;
+}
+
+.main{
+    width: 100%;
+    min-height: 73vh;
+    background-color: rgba(59, 79, 80, 0.73);
+}
+

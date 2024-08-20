@@ -1,0 +1,39 @@
+.allevents {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Use percentage for width instead of vw */
+    height: min-content;
+    background-color: rgba(32, 32, 32, 0.81);
+    justify-content: center; /* Center items if needed */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .allevents {
+        width: 100%; /* Full width on medium screens */
+        margin: 10px 5px; /* Adjust margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .allevents {
+        width: 100%; /* Full width on smaller screens */
+        margin: 5px; /* Further reduce margins */
+        padding: 5px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .allevents {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        align-items: center; /* Center items */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+    }
+}
+.EventList{
+    height: min-content;
+    width: 100vw;
+    background-position: cover;
+}
